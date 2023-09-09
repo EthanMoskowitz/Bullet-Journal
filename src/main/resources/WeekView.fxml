@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <root>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="712.0" prefWidth="1026.0" style="-fx-background-color: lightblue;" stylesheets="@style.css">
+         <children>
+            <VBox prefHeight="590.0" prefWidth="194.0" style="-fx-background-color: #6287c4;">
+               <children>
+                  <ImageView fitHeight="44.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="5.0">
+                     <image>
+                        <Image url="@images/BujoPig.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" translateX="65.0" translateY="-30.0">
+                     <image>
+                        <Image url="@images/Logo.PNG" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER" prefHeight="34.0" prefWidth="194.0" style="-fx-background-color: #5F6369;" translateY="-20.0">
+                     <children>
+                        <Label fx:id="name" alignment="CENTER" prefHeight="32.0" prefWidth="195.0" text="untitled" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Chalkboard" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <ScrollPane fx:id="tasks" prefHeight="482.0" prefWidth="194.0" style="-fx-background-color: #6287c4;">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="478.0" prefWidth="194.0" style="-fx-background-color: #6287c4;">
+                           <children>
+                              <VBox fx:id="queue" prefHeight="478.0" prefWidth="192.0" style="-fx-background-color: #6287c4;" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <HBox layoutX="194.0" prefHeight="37.0" prefWidth="833.0">
+               <children>
+                  <Button fx:id="save" styleClass="menu-btn" mnemonicParsing="false" prefHeight="37.0" prefWidth="119.0" text="Save" textFill="WHITE" />
+                  <Button fx:id="open" styleClass="menu-btn" mnemonicParsing="false" prefHeight="39.0" prefWidth="119.0" text="Open" textFill="WHITE" />
+                  <Button fx:id="week" styleClass="menu-btn" mnemonicParsing="false" prefHeight="61.0" prefWidth="119.0" text="New Week" textFill="WHITE" />
+                  <Button fx:id="task" styleClass="menu-btn" mnemonicParsing="false" prefHeight="53.0" prefWidth="119.0" text="New Task" textFill="WHITE" />
+                  <Button fx:id="event" styleClass="menu-btn" mnemonicParsing="false" prefHeight="70.0" prefWidth="119.0" text="New Event" textFill="WHITE" />
+                  <Button fx:id="edit" styleClass="menu-btn" mnemonicParsing="false" prefHeight="37.0" prefWidth="119.0" text="Edit" textFill="WHITE" />
+                  <Button fx:id="about" styleClass="menu-btn" mnemonicParsing="false" prefHeight="37.0" prefWidth="119.0" text="About" textFill="WHITE" />
+               </children>
+            </HBox>
+            <VBox fx:id="monday" layoutX="194.0" layoutY="108.0" prefHeight="482.0" prefWidth="119.0" style="-fx-background-color: #9ec8f1;" />
+            <VBox fx:id="tuesday" layoutX="313.0" layoutY="108.0" prefHeight="482.0" prefWidth="119.0" style="-fx-background-color: #b8d7f4;" />
+            <VBox fx:id="wednesday" layoutX="431.0" layoutY="108.0" prefHeight="482.0" prefWidth="119.0" style="-fx-background-color: #9ec8f1;" />
+            <VBox fx:id="thursday" layoutX="550.0" layoutY="108.0" prefHeight="482.0" prefWidth="119.0" style="-fx-background-color: #b8d7f4;" />
+            <VBox fx:id="friday" layoutX="669.0" layoutY="108.0" prefHeight="482.0" prefWidth="119.0" style="-fx-background-color: #9ec8f1;" />
+            <VBox fx:id="saturday" layoutX="788.0" layoutY="108.0" prefHeight="482.0" prefWidth="119.0" style="-fx-background-color: #b8d7f4;" />
+            <VBox fx:id="sunday" layoutX="907.0" layoutY="108.0" prefHeight="482.0" prefWidth="119.0" style="-fx-background-color: #9ec8f1;" />
+            <Label fx:id="border" layoutX="-1.0" layoutY="588.0" prefHeight="126.0" prefWidth="1027.0" style="-fx-background-color: #6287c4;" text="">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="stats" alignment="TOP_LEFT" layoutX="746.0" layoutY="596.0" prefHeight="110.0" prefWidth="272.0" style="-fx-background-color: gray;" text="Label" wrapText="true" />
+            <Label alignment="CENTER" layoutX="907.0" layoutY="51.0" prefHeight="57.0" prefWidth="119.0" style="-fx-background-color: #6F7378;" text="Sunday" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="788.0" layoutY="51.0" prefHeight="57.0" prefWidth="119.0" style="-fx-background-color: #ABB0B8;" text="Saturday" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="669.0" layoutY="51.0" prefHeight="57.0" prefWidth="119.0" style="-fx-background-color: #6F7378;" text="Friday" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="550.0" layoutY="51.0" prefHeight="57.0" prefWidth="119.0" style="-fx-background-color: #ABB0B8;" text="Thursday" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="431.0" layoutY="51.0" prefHeight="57.0" prefWidth="119.0" style="-fx-background-color: #6F7378;" text="Wednesday" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="313.0" layoutY="51.0" prefHeight="57.0" prefWidth="119.0" style="-fx-background-color: #ABB0B8;" text="Tuesday" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="194.0" layoutY="51.0" prefHeight="57.0" prefWidth="119.0" style="-fx-background-color: #6F7378;" text="Monday" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </root>
+</Scene>

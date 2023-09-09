@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane styleClass="page" prefHeight="390.0" prefWidth="389.0" stylesheets="@style.css">
+        <children>
+         <Label layoutX="165.0" layoutY="240.0" text=":">
+            <font>
+               <Font size="27.0" />
+            </font>
+         </Label>
+         <ComboBox fx:id="day" layoutX="112.0" layoutY="81.0" prefHeight="26.0" prefWidth="159.0" promptText="Day" />
+         <Label layoutX="33.0" layoutY="121.0" prefHeight="27.0" prefWidth="59.0" text="Name:">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <TextField fx:id="name" layoutX="116.0" layoutY="121.0" />
+         <Label layoutX="9.0" layoutY="161.0" prefHeight="27.0" prefWidth="107.0" text="Description:">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <TextArea fx:id="description" layoutX="116.0" layoutY="161.0" prefHeight="71.0" prefWidth="160.0" wrapText="true" />
+         <TextField fx:id="startHour" layoutX="118.0" layoutY="246.0" prefHeight="26.0" prefWidth="46.0" />
+         <TextField fx:id="duration" layoutX="118.0" layoutY="290.0" />
+         <Label layoutX="17.0" layoutY="245.0" prefHeight="27.0" prefWidth="96.0" text="Start Time:">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="21.0" layoutY="290.0" prefHeight="27.0" prefWidth="87.0" text="Duration:">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+         <ImageView fitHeight="86.0" fitWidth="128.0" layoutX="283.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/mrKrabs.png" />
+            </image>
+         </ImageView>
+         <Label fx:id="message" layoutX="120.0" layoutY="320.0" prefWidth="250.0" text="">
+             <font>
+                 <Font size="10.0" />
+             </font>
+         </Label>
+            <Button fx:id="cancel" styleClass="btn" layoutX="125.0" layoutY="340.0" mnemonicParsing="false" text="Cancel" />
+            <Button fx:id="confirm" styleClass="btn" layoutX="215.0" layoutY="340.0" mnemonicParsing="false" text="Confirm" />
+         <TextField fx:id="startMinute" layoutX="172.0" layoutY="246.0" prefHeight="26.0" prefWidth="46.0" />
+         <ComboBox fx:id="meridiem" layoutX="226.0" layoutY="246.0" prefHeight="26.0" prefWidth="68.0" promptText="AM" />
+         <Label fx:id="title" layoutX="148.0" layoutY="41.0" prefHeight="17.0" prefWidth="159.0" text="New Event" textAlignment="CENTER">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+        </children>
+    </AnchorPane>
+</Scene>

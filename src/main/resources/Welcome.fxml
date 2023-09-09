@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="583.0" prefWidth="671.0" style="-fx-background-color: #6287c4;" styleClass="page" stylesheets="@style.css">
+      <children>
+         <Label layoutX="129.0" layoutY="102.0" text="WELCOME">
+            <font>
+               <Font name="Verdana" size="80.0" />
+            </font>
+         </Label>
+         <Button fx:id="select" layoutX="396.0" layoutY="330.0" mnemonicParsing="false" prefHeight="113.0" prefWidth="264.0" styleClass="btn" text="Select Journal">
+            <font>
+               <Font size="28.0" />
+            </font>
+         </Button>
+         <Button fx:id="create" layoutX="11.0" layoutY="330.0" mnemonicParsing="false" prefHeight="113.0" prefWidth="264.0" styleClass="btn" text="Create New Week">
+            <font>
+               <Font size="28.0" />
+            </font>
+         </Button>
+         <ImageView fx:id="pig" fitHeight="88.0" fitWidth="152.0" layoutX="289.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/BujoPig.PNG" />
+            </image>
+         </ImageView>
+         <Label layoutX="176.0" layoutY="206.0" text="To BujoPig's Bujo Journal">
+            <font>
+               <Font name="Verdana" size="25.0" />
+            </font>
+         </Label>
+      </children></AnchorPane>
+</Scene>

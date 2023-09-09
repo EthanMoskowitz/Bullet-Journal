@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane styleClass="page" prefHeight="725.0" prefWidth="1000.0" stylesheets="style.css">
+      <children>
+         <Label layoutX="411.0" layoutY="18.0" text="About BujoPig">
+            <font>
+               <Font size="30.0" />
+            </font>
+         </Label>
+         <ImageView fitHeight="63.0" fitWidth="102.0" layoutX="327.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/BujoPig.PNG" />
+            </image>
+         </ImageView>
+         <Button fx:id="back" styleClass="btn" layoutX="392.0" layoutY="681.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="216.0" text="Back" />
+         <Label alignment="TOP_LEFT" layoutX="17.0" layoutY="77.0" prefHeight="597.0" prefWidth="967.0" text="Once upon a time, in the enchanting landscapes of Tuscany, there lived a remarkable pig named BujoPig. Unlike other pigs, BujoPig had an insatiable thirst for knowledge and a deep appreciation for education. While his peers reveled in traditional pig activities, BujoPig immersed himself in books, art, and the pursuit of wisdom. BujoPig's quest for knowledge eventually led him down an unexpected path. He became fascinated with the world of organized crime, not out of a desire for power, but to understand the complex dynamics at play. Drawing inspiration from the mafia legends of old, BujoPig devised a unique approach to his newfound interest – he would combine his passion for education with the power of bullet journaling. BujoPig embarked on an extraordinary journey, gathering a loyal team of animal associates who shared his vision. Together, they established a secret society known as &quot;La Conoscenza&quot; (The Knowledge). Their mission was to wield knowledge as a force for good, dismantling the harmful aspects of organized crime and promoting education and enlightenment. BujoPig created a bullet journal unlike any other. Within its pages, he meticulously crafted a comprehensive curriculum, blending academic subjects with the art of strategy and critical thinking. Each member of &quot;La Conoscenza&quot; received a personal journal, tailor-made to their unique talents and interests. BujoPig encouraged them to record their observations, insights, and plans, fostering an environment of shared knowledge and collaboration. As the organization grew, &quot;La Conoscenza&quot; began infiltrating the criminal underworld, using their intelligence and expertise to undermine the destructive activities of other mobs. BujoPig's journals became symbols of enlightenment and progress, sought after by both allies and enemies alike. BujoPig's true strength lay in his ability to negotiate and build bridges between rival factions. With his bullet journal in hand, he would convene meetings, presenting well-researched arguments and proposing alternative paths that emphasized education and personal growth. Through his persuasive skills, BujoPig slowly transformed the mindset of those around him, emphasizing the value of knowledge over violence. Over time, BujoPig's vision started to bear fruit. Under his guidance, &quot;La Conoscenza&quot; became a beacon of hope, not only for the animals within the organization but also for the larger community. They established libraries, scholarship programs, and mentorship initiatives, offering opportunities for education and personal development to those who had been caught in the cycle of crime. BujoPig's legacy extended far beyond the confines of organized crime. His ideas and methodologies spread throughout Tuscany and beyond, inspiring others to embrace the power of education and bullet journaling as tools for positive change. The transformation he initiated rippled through generations, creating a society that valued knowledge, critical thinking, and personal growth. As time passed, BujoPig's journal became a treasured artifact, displayed in museums as a testament to the pig who dared to challenge the status quo. His story serves as a reminder that even in the darkest of worlds, education and enlightenment can pave the way for redemption and a brighter future. And so, the tale of BujoPig, the Italian mob boss pig who valued education above all, continues to inspire generations, reminding us that the pursuit of knowledge and the power of the bullet journal can truly change lives and shape a better world." wrapText="true">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Label>
+      </children></AnchorPane>
+</Scene>

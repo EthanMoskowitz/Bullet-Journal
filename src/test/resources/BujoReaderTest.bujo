@@ -1,0 +1,1 @@
+{"preferences":{"name":"Week 1","taskLimit":5,"eventLimit":6},"tasks":[{"name":"Name","description":"Desc","day":"MONDAY","status":"COMPLETE"}],"events":[{"name":"Name","description":"Desc","day":"MONDAY","start":{"hour":1,"minute":16,"meridiem":"PM"},"duration":7.7}]}
